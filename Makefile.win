@@ -1,0 +1,45 @@
+# Project: iter-vs-recursao-c
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main_teste_B.o fibonacci/iterativo/fibonacci_iterativo.o fibonacci/recursivo/fibonacci_recursivo.o fatorial/recursivo/fatorial_recursivo.o fatorial/iterativo/fatorial_iterativo.o cronometro/cronometro.o $(RES)
+LINKOBJ  = main_teste_B.o fibonacci/iterativo/fibonacci_iterativo.o fibonacci/recursivo/fibonacci_recursivo.o fatorial/recursivo/fatorial_recursivo.o fatorial/iterativo/fatorial_iterativo.o cronometro/cronometro.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = iter-vs-recursao-c.exe
+CXXFLAGS = $(CXXINCS)   -std=c99
+CFLAGS = $(INCS)   -std=c99
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before iter-vs-recursao-c.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "iter-vs-recursao-c.exe" $(LIBS)
+
+main_teste_B.o: main_teste_B.c
+	$(CC) -c main_teste_B.c -o main_teste_B.o $(CFLAGS)
+
+fibonacci/iterativo/fibonacci_iterativo.o: fibonacci/iterativo/fibonacci_iterativo.c
+	$(CC) -c fibonacci/iterativo/fibonacci_iterativo.c -o fibonacci/iterativo/fibonacci_iterativo.o $(CFLAGS)
+
+fibonacci/recursivo/fibonacci_recursivo.o: fibonacci/recursivo/fibonacci_recursivo.c
+	$(CC) -c fibonacci/recursivo/fibonacci_recursivo.c -o fibonacci/recursivo/fibonacci_recursivo.o $(CFLAGS)
+
+fatorial/recursivo/fatorial_recursivo.o: fatorial/recursivo/fatorial_recursivo.c
+	$(CC) -c fatorial/recursivo/fatorial_recursivo.c -o fatorial/recursivo/fatorial_recursivo.o $(CFLAGS)
+
+fatorial/iterativo/fatorial_iterativo.o: fatorial/iterativo/fatorial_iterativo.c
+	$(CC) -c fatorial/iterativo/fatorial_iterativo.c -o fatorial/iterativo/fatorial_iterativo.o $(CFLAGS)
+
+cronometro/cronometro.o: cronometro/cronometro.c
+	$(CC) -c cronometro/cronometro.c -o cronometro/cronometro.o $(CFLAGS)
