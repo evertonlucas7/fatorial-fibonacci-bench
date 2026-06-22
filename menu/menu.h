@@ -1,7 +1,10 @@
 #ifndef MENU_H
 #define MENU_H
 
-int exibirMenuPrincipal(void);
-int exibirSubMenu(const char *titulo);
+int coletarEntrada();
+int escolherProblema();
+int escolherOrdem();
+int escolherExibicao();
+int escolherNovamente();
 
 #endif
