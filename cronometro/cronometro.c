@@ -2,16 +2,15 @@
 #include "cronometro.h"
 
 // Variável para armazenar o tempo assim que cronometro_iniciar() for chamado
-static struct timespec tempo_inicial;
+static clock_t tempo_inicial;
 
 void cronometro_iniciar(void)
 {
-    timespec_get(&tempo_inicial, TIME_UTC);
+    tempo_inicial = clock();
 }
 
 double cronometro_parar(void)
 {
-    struct timespec tempo_final;
-    timespec_get(&tempo_final, TIME_UTC);
-    return (double) (tempo_final.tv_sec - tempo_inicial.tv_sec) + (double) (tempo_final.tv_nsec - tempo_inicial.tv_nsec) / 1e9;
+    clock_t tempo_final = clock();
+    return (double) (tempo_final - tempo_inicial) / CLOCKS_PER_SEC;
 }
