@@ -2,7 +2,7 @@
 unsigned long long int fibonacci_recursivo (int posicao)
 {
 	if (posicao == 0)
-		return 0; // Lembrando que a posição é contada a partir de 0, não de 1
+		return 0; /* Lembrando que a posição é contada a partir de 0, não de 1 */
 	if (posicao == 1)
 		return 1;
 	return fibonacci_recursivo(posicao-1) + fibonacci_recursivo(posicao-2);

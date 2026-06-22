@@ -1,7 +1,7 @@
 #include <time.h>
 #include "cronometro.h"
 
-// Variável para armazenar o tempo assim que cronometro_iniciar() for chamado
+/* Variável para armazenar o tempo assim que cronometro_iniciar() for chamado */
 static clock_t tempo_inicial;
 
 void cronometro_iniciar(void)

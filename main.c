@@ -89,9 +89,9 @@ int main()
             case 2:
                 printf("\n\033[1m * Resultado: %llu\033[0m\n", resultado_recursivo);
                 switch (modulo_escolhido) {
-                    case 1: // Caso de Cálculo de Fatorial
+                    case 1: /* Caso de Cálculo de Fatorial */
                         if (ordem_escolhida == 1){
-                            // Caso de iterativa primeiro e recursiva segundo
+                            /* Caso de iterativa primeiro e recursiva segundo */
 
                             printf("Código fonte do Cálculo de Fatorial de Forma Iterativa:\n");
                             printf("unsigned long long int fatorial_iterativo(int n){\n");
@@ -112,7 +112,7 @@ int main()
                             break;
                         }
                         if (ordem_escolhida == 2) {
-                            // Caso de recursiva primeiro e iterativa segunda
+                            /* Caso de recursiva primeiro e iterativa segunda */
                             
                             printf("Código fonte do Cálculo de Fatorial de Forma Recursiva:\n");
                             printf("unsigned long long int fatorial_iterativo (int n)\n");
@@ -133,9 +133,9 @@ int main()
                             break;
                         }
                         break;
-                    case 2: // Caso de Cálculo de Fibonacci
+                    case 2: /* Caso de Cálculo de Fibonacci */
                         if (ordem_escolhida == 1){
-                            // Caso de iterativa primeiro e recursiva segundo
+                            /* Caso de iterativa primeiro e recursiva segundo */
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Iterativa:\n");
                             printf("unsigned long long int fibonacci_iterativo(int qtd){\n");
                             printf("	unsigned long long int termo1 = 0, termo2 = 1, soma;\n");
@@ -157,7 +157,7 @@ int main()
                             break;
                         }
                         if (ordem_escolhida == 2) {
-                            // Caso de recursiva primeiro e iterativa segunda
+                            /* Caso de recursiva primeiro e iterativa segunda */
 
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Recursiva:\n");
                             printf("unsigned long long int fibonacci_recursivo (int posicao)\n");
@@ -184,9 +184,9 @@ int main()
             case 3:
                 printf("\n\033[1m * Resultado: %llu\033[0m\n", resultado_iterativo);
                 switch (modulo_escolhido) {
-                    case 1: // Caso de Cálculo de Fatorial
+                    case 1: /* Caso de Cálculo de Fatorial */
                         if (ordem_escolhida == 1){
-                            // Caso de iterativa primeiro e recursiva segundo
+                            /* Caso de iterativa primeiro e recursiva segundo */
 
                             printf("Código fonte do Cálculo de Fatorial de Forma Iterativa:\n");
                             printf("unsigned long long int fatorial_iterativo(int n){\n");
@@ -207,7 +207,7 @@ int main()
                             break;
                         }
                         if (ordem_escolhida == 2) {
-                            // Caso de recursiva primeiro e iterativa segunda
+                            /* Caso de recursiva primeiro e iterativa segunda */
                             
                             printf("Código fonte do Cálculo de Fatorial de Forma Recursiva:\n");
                             printf("unsigned long long int fatorial_iterativo (int n)\n");
@@ -228,9 +228,9 @@ int main()
                             break;
                         }
                         break;
-                    case 2: // Caso de Cálculo de Fibonacci
+                    case 2: /* Caso de Cálculo de Fibonacci */
                         if (ordem_escolhida == 1){
-                            // Caso de iterativa primeiro e recursiva segundo
+                            /* Caso de iterativa primeiro e recursiva segundo */
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Iterativa:\n");
                             printf("unsigned long long int fibonacci_iterativo(int qtd){\n");
                             printf("	unsigned long long int termo1 = 0, termo2 = 1, soma;\n");
@@ -252,7 +252,7 @@ int main()
                             break;
                         }
                         if (ordem_escolhida == 2) {
-                            // Caso de recursiva primeiro e iterativa segunda
+                            /* Caso de recursiva primeiro e iterativa segunda */
 
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Recursiva:\n");
                             printf("unsigned long long int fibonacci_recursivo (int posicao)\n");
