@@ -20,7 +20,7 @@ int escolherProblema() {
     while (1) {
         printf("\n\033[1m * Escolha o problema clássico a ser abordado:\033[0m\n");
         printf("1.  Cálculo de Fatorial;\n");
-        printf("2.  Exibição de Fibonacci.\n");
+        printf("2.  Exibição da Sequência de Fibonacci.\n");
         printf("Opção: ");
         scanf("%d", &problema_escolhido);
 
