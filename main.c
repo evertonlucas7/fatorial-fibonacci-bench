@@ -181,6 +181,7 @@ int main()
                         }
                         break;
                 }
+                break;
             case 3:
                 printf("\n\033[1m * Resultado: %llu\033[0m\n", resultado_iterativo);
                 switch (modulo_escolhido) {
