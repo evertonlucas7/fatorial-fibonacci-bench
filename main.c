@@ -139,7 +139,7 @@ int main()
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Iterativa:\n");
                             printf("unsigned long long int fibonacci_iterativo(int qtd){\n");
                             printf("	unsigned long long int termo1 = 0, termo2 = 1, soma;\n");
-                            printf("	for(int i=1; i<=qtd; i++)\n");
+                            printf("	for(int i=2; i<=qtd; i++)\n");
                             printf("		soma = termo1 + termo2, termo1 = termo2, termo2 = soma;\n");
                             printf("	return soma;\n");
                             printf("}\n\n");
@@ -172,7 +172,7 @@ int main()
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Iterativa:\n");
                             printf("unsigned long long int fibonacci_iterativo(int qtd){\n");
                             printf("	unsigned long long int termo1 = 0, termo2 = 1, soma;\n");
-                            printf("	for(int i=1; i<=qtd; i++)\n");
+                            printf("	for(int i=2; i<=qtd; i++)\n");
                             printf("		soma = termo1 + termo2, termo1 = termo2, termo2 = soma;\n");
                             printf("	return soma;\n");
                             printf("}\n");
@@ -234,7 +234,7 @@ int main()
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Iterativa:\n");
                             printf("unsigned long long int fibonacci_iterativo(int qtd){\n");
                             printf("	unsigned long long int termo1 = 0, termo2 = 1, soma;\n");
-                            printf("	for(int i=1; i<=qtd; i++)\n");
+                            printf("	for(int i=2; i<=qtd; i++)\n");
                             printf("		soma = termo1 + termo2, termo1 = termo2, termo2 = soma;\n");
                             printf("	return soma;\n");
                             printf("}\n\n");
@@ -267,7 +267,7 @@ int main()
                             printf("Código fonte da Exibição da Sequência de Fibonacci de Forma Iterativa:\n");
                             printf("unsigned long long int fibonacci_iterativo(int qtd){\n");
                             printf("	unsigned long long int termo1 = 0, termo2 = 1, soma;\n");
-                            printf("	for(int i=1; i<=qtd; i++)\n");
+                            printf("	for(int i=2; i<=qtd; i++)\n");
                             printf("		soma = termo1 + termo2, termo1 = termo2, termo2 = soma;\n");
                             printf("	return soma;\n");
                             printf("}\n");
