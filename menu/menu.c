@@ -39,7 +39,7 @@ int escolherOrdem() {
         printf("Opção: ");
         scanf("%d", &ordem_escolhida);
 
-        if (ordem_escolhida >= 1 && ordem_escolhida <= 3)
+        if (ordem_escolhida >= 1 && ordem_escolhida <= 2)
             return ordem_escolhida;
 
         printf("\033[1m[Erro]\033[0m Opção inválida.\n");
